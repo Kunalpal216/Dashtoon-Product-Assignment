@@ -19,8 +19,8 @@ export default function StripImage({ idx, height, width }) {
     }
 
     return <div class={imageDivClasses} onClick={toggleModal}>
-        <img class="h-4/6" src={comicPanelState.stripImages[idx].imageURL} />
-        <div class="h-2/6 bg-white shadow">
+        <img class="h-40 m-auto" src={comicPanelState.stripImages[idx].imageURL} />
+        <div class="relative bg-white shadow">
             <div className="font-comic text-2xl">{comicPanelState.stripImages[idx].text}</div>
         </div>
     </div>;
