@@ -1,0 +1,18 @@
+.speech-bubble {
+    position: absolute; /* Position the speech bubble relative to its container */
+    background-color: #fff; /* Set the background color */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    padding: 10px; /* Add padding to the content */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  }
+  
+  .speech-bubble:after {
+    content: ""; /* Add a pseudo-element for the triangular tail */
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    transform: rotate(45deg); /* Rotate the tail */
+    top: 50%; /* Position the tail vertically */
+    right: -10px; /* Position the tail horizontally */
+  }
