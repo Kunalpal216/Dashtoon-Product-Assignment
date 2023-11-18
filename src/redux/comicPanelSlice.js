@@ -7,7 +7,7 @@ const initialState = {
     imageEditModalState : false,
     layoutSize : 'sm',
     filledImages: 0,
-    stripImages : new Array(10).fill({prompt: '',text : '',textPos : 'top-right',imageURL : 'https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png'})
+    stripImages : new Array(10).fill({prompt: '',text : '',textPos : 'top-right',imageURL : '/imagePlaceholder.png'})
 }
 
 const comicPanelSlice = createSlice({
@@ -32,6 +32,7 @@ const comicPanelSlice = createSlice({
         onSubmitClick: function (state,action){
             console.log(action.payload);
             state.stripImages[state.currIdx].imageURL=action.payload.url;
+            state.stripImages[state.currIdx].text=action.payload.text;
             // console.log(state.stripImages[action.payload.idx].prompt.length);
             // if(state.stripImages[action.payload.idx].prompt.length===0){
             //     toast("Wow so easy!");
