@@ -1,14 +1,13 @@
 import { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Modal from 'react-modal';
 import { onSubmitClick, toggleImageEditModalState } from "../redux/comicPanelSlice";
 import Navbar from "../components/Navbar";
-import ComicShareButton from "../components/comicStrip/ShareStrip";
-import ComicDownload from "../components/comicStrip/Download";
-import StripPanel from "../components/comicStrip/StripPanel";
+import ComicShareButton from "../components/ShareStrip";
+import ComicDownload from "../components/Download";
+import StripPanel from "../components/StripPanel";
 import Footer from "../components/Footer";
+import Modal from 'react-modal';
 
-Modal.setAppElement('#root');
 
 export default function CreateComic() {
     let [base64Source, setBase64Source] = useState(null);

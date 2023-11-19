@@ -1,6 +1,5 @@
 import Typewriter from "typewriter-effect";
 import Navbar from "../components/Navbar";
-import './Homepage.css';
 import Footer from "../components/Footer";
 
 export default function HomePage() {

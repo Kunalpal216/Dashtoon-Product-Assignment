@@ -1,13 +1,13 @@
 import { Provider } from 'react-redux';
 import './App.css'
-import Navbar from './components/Navbar'
-import ComicStrip from './components/comicStrip/ComicStrip';
 import HomePage from './pages/Homepage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { store } from './redux/store';
 
 import Modal from 'react-modal';
 import CreateComic from './pages/CreateComic';
+
+Modal.setAppElement('#root');
 
 function App() {
 

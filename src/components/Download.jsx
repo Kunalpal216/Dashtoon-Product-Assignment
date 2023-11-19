@@ -1,3 +1,4 @@
+import html2canvas from "html2canvas";
 import { toast } from "react-toastify";
 
 
@@ -10,7 +11,7 @@ export default function ComicDownload() {
         console.log(dataURL);
         const link = document.createElement('a');
         link.href = dataURL;
-        link.setAttribute('download', fileName);
+        link.setAttribute('download', 'strip-comic.png');
         link.click();
         URL.revokeObjectURL(dataURL);
     }
