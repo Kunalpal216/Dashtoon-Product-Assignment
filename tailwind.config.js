@@ -11,7 +11,8 @@ export default {
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'display': ['Oswald'],
       'body': ['"Open Sans"'],
-      'comic' : ['Comic Neue']
+      'comic' : ['Comic Neue'],
+      'bubblegum' : ['Bubblegum Sans']
     },
   },
   plugins: [],

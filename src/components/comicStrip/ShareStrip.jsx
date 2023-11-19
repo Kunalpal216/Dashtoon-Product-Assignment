@@ -35,7 +35,7 @@ export default function ComicShareButton() {
     }
     return <>
         <div class="px-8 pt-6 pb-4 max-w-screen-md mx-auto">
-        <button onClick={getCanvasShareableURL} class="bg-blue-500 hover:bg-blue-700 py-2 px-4 text-white font-bold rounded focus:outline-none focus:shadow-outline w-full">Share this Strip</button>
+        <button onClick={getCanvasShareableURL} class="rounded px-32 py-2 mt-4 text-3xl font-comic font-bold border-b-4 border-l-2 shadow-lg bg-stone-900 border-black-900 text-yellow-500 border border-blue-500 border-[1px]">Share it</button>
         </div>
     </>;
 }
