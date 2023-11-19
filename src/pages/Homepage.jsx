@@ -15,7 +15,7 @@ export default function HomePage() {
                     <Navbar />
                 </div>
                 <div class="md:flex">
-                    <div class="md:w-1/2 p-4">
+                    <div class="md:w-1/2 p-4 my-auto">
                         <div class="mt-40 inline-block">
                             <p className="text-gray-300 mx-2 text-5xl font-bubblegum tracking-wide font-extrabold md:text-left lg:text-8xl md:text-12xl">
                                 Create Your Own Comics Online !!

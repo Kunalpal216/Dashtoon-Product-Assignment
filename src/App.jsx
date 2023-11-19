@@ -6,6 +6,7 @@ import { store } from './redux/store';
 
 import Modal from 'react-modal';
 import CreateComic from './pages/CreateComic';
+import NotFound from './pages/NotFound';
 
 Modal.setAppElement('#root');
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<HomePage />} />
           <Route exact path='/comic-strip' element={<CreateComic />} />
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
       </Provider>
     </BrowserRouter>

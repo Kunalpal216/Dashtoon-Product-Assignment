@@ -17,7 +17,7 @@ export default function StripImage({ idx }) {
         <div class="relative">
             <img src={comicPanelState.stripImages[idx].imageURL} alt="Image" class="w-full h-full object-cover" />
             {
-                comicPanelState.stripImages[idx].text.length !== 0 ? <div class="absolute bottom-0 w-full text-center font-comic text-base sm:text-lg md:text-xl lg:text-2xl text-white bg-black bg-opacity-50 p-4">
+                comicPanelState.stripImages[idx].text.length !== 0 ? <div class="absolute bottom-0 w-full text-center font-comic text-base sm:text-lg md:text-xl lg:text-2xl text-white bg-black bg-opacity-50">
                     <p>{comicPanelState.stripImages[idx].text}</p>
                 </div> : null
             }
