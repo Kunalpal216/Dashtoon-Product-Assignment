@@ -4,12 +4,7 @@ import { toggleImageEditModalState } from "../redux/comicPanelSlice";
 import './StripImage.css';
 
 export default function StripImage({ idx }) {
-    console.log(idx)
     let dispatch = useDispatch();
-
-    let imageDivClasses = `w-[20%] rounded overflow-hidden shadow-lg inline-block m-0 border border-black-900 overflow-hidden`;
-
-    console.log(idx);
 
     const comicPanelState = useSelector((state) => state.comicPanel);
 
@@ -18,7 +13,7 @@ export default function StripImage({ idx }) {
         dispatch(toggleImageEditModalState(idx));
     }
 
-    return <div class={imageDivClasses} onClick={toggleModal}>
+    return <div class="w-[20%] rounded overflow-hidden shadow-lg inline-block m-0 border border-black-900 overflow-hidden" onClick={toggleModal}>
         <div class="relative">
             <img src={comicPanelState.stripImages[idx].imageURL} alt="Image" class="w-full h-full object-cover" />
             {

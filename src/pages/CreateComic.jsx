@@ -84,7 +84,7 @@ export default function CreateComic() {
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                            Strip Text
+                            Scene Text
                         </label>
                         <input ref={textRef} maxlength="20" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="strip-text" type="text" placeholder="Hui Hui" />
                     </div>
