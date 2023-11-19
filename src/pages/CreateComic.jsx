@@ -34,29 +34,29 @@ export default function CreateComic() {
         console.log(promptRef.current.value);
         console.log(textRef.current.value);
 
-        const response = await fetch(
-            "https://api-inference.huggingface.co/models/ogkalu/Comic-Diffusion",
-            {
-                headers: { Authorization: "Bearer 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" },
-                method: "POST",
-                body: JSON.stringify({ "inputs": promptRef.current.value }),
-            }
-        );
-        const result = await response.blob();
-
         // const response = await fetch(
-        //     "https://xdwvg9no7pefghrn.us-east-1.aws.endpoints.huggingface.cloud",
+        //     "https://api-inference.huggingface.co/models/ogkalu/Comic-Diffusion",
         //     {
-        //         headers: {
-        //             Accept: "image/png",
-        //             Authorization: "Bearer VknySbLLTUjbxXAXCjyfaFIPwUTCeRXbFSOjwRiCxsxFyhbnGjSFalPKrpvvDAaPVzWEevPljilLVDBiTzfIbWFdxOkYJxnOPoHhkkVGzAknaOulWggusSFewzpqsNWM",
-        //             "Content-Type": "application/json",
-        //         },
+        //         headers: { Authorization: "Bearer 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" },
         //         method: "POST",
         //         body: JSON.stringify({ "inputs": promptRef.current.value }),
         //     }
         // );
         // const result = await response.blob();
+
+        const response = await fetch(
+            "https://xdwvg9no7pefghrn.us-east-1.aws.endpoints.huggingface.cloud",
+            {
+                headers: {
+                    Accept: "image/png",
+                    Authorization: "Bearer VknySbLLTUjbxXAXCjyfaFIPwUTCeRXbFSOjwRiCxsxFyhbnGjSFalPKrpvvDAaPVzWEevPljilLVDBiTzfIbWFdxOkYJxnOPoHhkkVGzAknaOulWggusSFewzpqsNWM",
+                    "Content-Type": "application/json",
+                },
+                method: "POST",
+                body: JSON.stringify({ "inputs": promptRef.current.value }),
+            }
+        );
+        const result = await response.blob();
 
         let url = URL.createObjectURL(result);
         // let url='/imagePlaceholder.png';

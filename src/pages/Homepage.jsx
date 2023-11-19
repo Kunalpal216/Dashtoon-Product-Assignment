@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 
 export default function HomePage() {
 
-
     function onClick() {
         window.location = "/comic-strip";
     }
