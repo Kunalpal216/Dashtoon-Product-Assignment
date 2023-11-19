@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { store } from './redux/store';
 
 import Modal from 'react-modal';
+import CreateComic from './pages/CreateComic';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       <Provider store={store}>
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/comic-strip' element={<ComicStrip />} />
+          <Route path='/comic-strip' element={<CreateComic />} />
         </Routes>
       </Provider>
     </BrowserRouter>

@@ -1,8 +1,15 @@
 import Typewriter from "typewriter-effect";
 import Navbar from "../components/Navbar";
 import './Homepage.css';
+import Footer from "../components/Footer";
 
 export default function HomePage() {
+
+
+    function onClick(){
+        window.location="/comic-strip";
+    }
+
     return (
         <>
             <div class="min-h-screen">
@@ -16,7 +23,7 @@ export default function HomePage() {
                                 Create Your Own Comics Online !!
                             </h2>
                         </div>
-                        <div class="text-xl md:text-left mx-2 font-comic text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3 lg:text-4xl md:text-2xl">
+                        <div class="text-xl md:text-left mx-2 font-bubblegum text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3 lg:text-4xl md:text-2xl">
                             <Typewriter
                                 options={{
                                     strings: [
@@ -33,10 +40,16 @@ export default function HomePage() {
                     </div>
                     <img src="/home.svg" class="w-1/2 md:mx-4 mx-auto" />
                 </div>
-                <button class="rounded px-32 py-2 mt-4 mb-4 text-3xl font-comic font-bold border-b-4 border-l-2 shadow-lg bg-stone-900 border-black-900 text-yellow-500 border border-blue-500 border-[1px]">
-                    Let's Start
-                </button>
+                <div>
+                    <div class="mx-auto mt-24 mb-8 text-3xl font-bubblegum text-white">
+                        Click below to start making your own comic strip !!
+                    </div>
+                    <button onClick={onClick} class="rounded px-32 py-2 mt-4 mb-4 text-3xl font-comic font-bold border-b-4 border-l-2 shadow-lg bg-stone-900 border-black-900 text-yellow-500 border border-blue-500 border-[1px]">
+                        Let's Start
+                    </button>
+                </div>
             </div>
+            <Footer/>
         </>
     );
 }
