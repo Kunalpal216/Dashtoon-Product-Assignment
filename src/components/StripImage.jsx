@@ -4,7 +4,7 @@ import { toggleImageEditModalState } from "../redux/comicPanelSlice";
 import './StripImage.css';
 
 export default function StripImage({ idx }) {
-    console.log(height, width)
+    console.log(idx)
     let dispatch = useDispatch();
 
     let imageDivClasses = `w-[20%] rounded overflow-hidden shadow-lg inline-block m-0 border border-black-900 overflow-hidden`;
