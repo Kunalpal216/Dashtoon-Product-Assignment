@@ -17,9 +17,9 @@ export default function HomePage() {
                 <div class="md:flex">
                     <div class="md:w-1/2 p-4">
                         <div class="mt-40 inline-block">
-                            <h2 className="wavy-border mx-2 text-5xl font-bubblegum tracking-wide font-extrabold tracking-tighter md:text-left text-gray-200 lg:text-8xl md:text-12xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-yellow-500">
+                            <p className="text-gray-300 mx-2 text-5xl font-bubblegum tracking-wide font-extrabold md:text-left lg:text-8xl md:text-12xl">
                                 Create Your Own Comics Online !!
-                            </h2>
+                            </p>
                         </div>
                         <div class="text-xl md:text-left mx-2 font-bubblegum text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3 lg:text-4xl md:text-2xl">
                             <Typewriter
