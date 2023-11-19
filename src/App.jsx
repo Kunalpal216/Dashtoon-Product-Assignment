@@ -15,8 +15,8 @@ function App() {
     <BrowserRouter>
       <Provider store={store}>
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/comic-strip' element={<CreateComic />} />
+          <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/comic-strip' element={<CreateComic />} />
         </Routes>
       </Provider>
     </BrowserRouter>
